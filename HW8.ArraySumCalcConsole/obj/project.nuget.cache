@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "50dpZOIA769S5BE9c5K+4jWuvg1jgWAfLpAZWXkuti9NNc7kysBkSyNjTZiiB19ygyisF6ytDaChzZc6L/444g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\LAS\\source\\repos\\HW8.ArraySumCalcConsole\\HW8.ArraySumCalcConsole\\HW8.ArraySumCalcConsole.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\LAS\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\LAS\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\LAS\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
+    "C:\\Users\\LAS\\.nuget\\packages\\servicestack.text\\8.1.2\\servicestack.text.8.1.2.nupkg.sha512",
+    "C:\\Users\\LAS\\.nuget\\packages\\system.diagnostics.diagnosticsource\\8.0.0\\system.diagnostics.diagnosticsource.8.0.0.nupkg.sha512",
+    "C:\\Users\\LAS\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",
+    "C:\\Users\\LAS\\.nuget\\packages\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512",
+    "C:\\Users\\LAS\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\LAS\\.nuget\\packages\\system.threading.thread\\4.3.0\\system.threading.thread.4.3.0.nupkg.sha512"
+  ],
+  "logs": []
+}
