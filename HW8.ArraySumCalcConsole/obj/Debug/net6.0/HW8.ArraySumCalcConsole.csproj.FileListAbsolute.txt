@@ -16,3 +16,4 @@ C:\Users\LAS\source\repos\HW8.ArraySumCalcConsole\HW8.ArraySumCalcConsole\bin\De
 C:\Users\LAS\source\repos\HW8.ArraySumCalcConsole\HW8.ArraySumCalcConsole\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
 C:\Users\LAS\source\repos\HW8.ArraySumCalcConsole\HW8.ArraySumCalcConsole\obj\Debug\net6.0\HW8.ArraySumCalcConsole.csproj.AssemblyReference.cache
 C:\Users\LAS\source\repos\HW8.ArraySumCalcConsole\HW8.ArraySumCalcConsole\obj\Debug\net6.0\HW8.ArraySumCalcConsole.csproj.CopyComplete
+C:\Users\LAS\source\repos\HW8.ArraySumCalcConsole\HW8.ArraySumCalcConsole\obj\Debug\net6.0\HW8.ArraySumCalcConsole.sourcelink.json
