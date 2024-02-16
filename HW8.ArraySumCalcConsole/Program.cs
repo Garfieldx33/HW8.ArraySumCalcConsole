@@ -18,17 +18,17 @@ CalcArraySync(array10M);
 Console.WriteLine("==============================================================");
 foreach (int tc in treadsUsingCountList)
 {
-    await CalcArrayParallelByThreads(array1HT, tc);
+    CalcArrayParallelByThreads(array1HT, tc);
 }
 Console.WriteLine("==============================================================");
 foreach (int tc in treadsUsingCountList)
 {
-    await CalcArrayParallelByThreads(array1M, tc);
+    CalcArrayParallelByThreads(array1M, tc);
 }
 Console.WriteLine("==============================================================");
 foreach (int tc in treadsUsingCountList)
 {
-    await CalcArrayParallelByThreads(array10M, tc);
+    CalcArrayParallelByThreads(array10M, tc);
 }
 Console.WriteLine("==============================================================");
 foreach (int tc in treadsUsingCountList)
