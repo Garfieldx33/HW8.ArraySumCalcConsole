@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HW8.ArraySumCalcConsole")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+714ec11ade0465c28957788dc667190089edb1cc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3af98db7d1c73b72a80c287ba90d1b1f3aa5271f")]
 [assembly: System.Reflection.AssemblyProductAttribute("HW8.ArraySumCalcConsole")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HW8.ArraySumCalcConsole")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

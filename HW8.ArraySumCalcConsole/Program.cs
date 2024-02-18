@@ -18,17 +18,17 @@ CalcArraySync(array10M);
 Console.WriteLine("==============================================================");
 foreach (int tc in treadsUsingCountList)
 {
-    CalcArrayParallelByThreads(array1HT, tc);
+    CalcArrayParallelByTasks(array1HT, tc);
 }
 Console.WriteLine("==============================================================");
 foreach (int tc in treadsUsingCountList)
 {
-    CalcArrayParallelByThreads(array1M, tc);
+    CalcArrayParallelByTasks(array1M, tc);
 }
 Console.WriteLine("==============================================================");
 foreach (int tc in treadsUsingCountList)
 {
-    CalcArrayParallelByThreads(array10M, tc);
+    CalcArrayParallelByTasks(array10M, tc);
 }
 Console.WriteLine("==============================================================");
 foreach (int tc in treadsUsingCountList)
@@ -90,18 +90,23 @@ void CalcArraySync(List<int> inputArray)
     Console.WriteLine($"Сумма массива из {inputArray.Count} элементов синхронно рассчиталась за {calcingtime} милисекунд и равна {sum}");
     taskInfos.Add(new TaskInfo { ItemsCount = inputArray.Count, CalcTimeInMs = calcingtime, CalcType = "Synchroniusly", TreadsCount = 1, TotalSum = sum });
 }
-void CalcArrayParallelByThreads(List<int> inputArray, int threadsCount)
+void CalcArrayParallelByTasks(List<int> inputArray, int threadsCount)
 {
     long sum = 0;
     var intsArrayList = SplitArray(inputArray.ToArray(), threadsCount);
     ConcurrentBag<long> resList = new ConcurrentBag<long>();
+    List<Task> tList = new List<Task>();
     Stopwatch sp = new Stopwatch();
     sp.Start();
-    Parallel.ForEach(intsArrayList, t => resList.Add(CalcSum(t)));
+    foreach (var arr in intsArrayList)
+    {
+        tList.Add(Task.Factory.StartNew(() => resList.Add(CalcSum(arr))));
+    }
+    Task.WaitAll(tList.ToArray()); 
     sp.Stop();
     sum = resList.Sum();
     double calcingtime = sp.Elapsed.TotalMilliseconds;
-    Console.WriteLine($"Сумма массива из {inputArray.Count} элементов через Parallel.ForEach рассчиталась за {calcingtime} милисекунд и равна {sum}.Потоков {threadsCount}");
+    Console.WriteLine($"Сумма массива из {inputArray.Count} элементов через Task рассчиталась за {calcingtime} милисекунд и равна {sum}.Потоков {threadsCount}");
     taskInfos.Add(new TaskInfo { ItemsCount = inputArray.Count, CalcTimeInMs = calcingtime, CalcType = "By Task", TreadsCount = threadsCount, TotalSum = sum });
 }
 void CalcArrayParallelByParallel(List<int> inputArray, int threadsCount)
